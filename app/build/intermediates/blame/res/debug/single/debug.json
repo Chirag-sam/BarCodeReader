@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/chirag/Android Projects/BarcodeReader/app/build/intermediates/res/merged/debug/layout-land_barcode_capture.xml.flat",
+        "source": "/home/chirag/Android Projects/BarcodeReader/app/src/main/res/layout-land/barcode_capture.xml"
+    },
+    {
+        "merged": "/home/chirag/Android Projects/BarcodeReader/app/build/intermediates/res/merged/debug/drawable-hdpi_icon.png.flat",
+        "source": "/home/chirag/Android Projects/BarcodeReader/app/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/home/chirag/Android Projects/BarcodeReader/app/build/intermediates/res/merged/debug/layout-v17_activity_main.xml.flat",
+        "source": "/home/chirag/Android Projects/BarcodeReader/app/src/main/res/layout-v17/activity_main.xml"
+    },
+    {
+        "merged": "/home/chirag/Android Projects/BarcodeReader/app/build/intermediates/res/merged/debug/layout-land-v17_activity_main.xml.flat",
+        "source": "/home/chirag/Android Projects/BarcodeReader/app/src/main/res/layout-land-v17/activity_main.xml"
+    },
+    {
+        "merged": "/home/chirag/Android Projects/BarcodeReader/app/build/intermediates/res/merged/debug/layout_barcode_capture.xml.flat",
+        "source": "/home/chirag/Android Projects/BarcodeReader/app/src/main/res/layout/barcode_capture.xml"
+    }
+]

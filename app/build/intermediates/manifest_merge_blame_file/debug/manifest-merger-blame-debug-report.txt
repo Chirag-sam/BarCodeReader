@@ -1,0 +1,105 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.google.android.gms.samples.vision.barcodereader"
+4    android:installLocation="auto"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="24"
+9-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml
+11
+12    <uses-feature android:name="android.hardware.camera" />
+12-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:6:5-60
+12-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:6:19-57
+13
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:8:5-65
+14-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:8:22-62
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:9:5-80
+15-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:9:22-77
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:10:5-81
+16-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:10:22-78
+17
+18    <application
+18-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:12:5-40:19
+19        android:allowBackup="true"
+19-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:13:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.0.0] /home/chirag/.gradle/caches/transforms-2/files-2.1/6d11613c3b6a00a9ea456b5609ec43f7/core-1.0.0/AndroidManifest.xml:22:18-86
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:fullBackupContent="false"
+23-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:14:9-42
+24        android:hardwareAccelerated="true"
+24-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:15:9-43
+25        android:icon="@drawable/icon"
+25-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:16:9-38
+26        android:label="MultiTrackerApp"
+26-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:17:9-40
+27        android:requestLegacyExternalStorage="true"
+27-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:20:9-52
+28        android:supportsRtl="true"
+28-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:18:9-37
+29        android:theme="@style/Theme.AppCompat" >
+29-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:19:9-47
+30        <meta-data
+30-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:21:9-23:69
+31            android:name="com.google.android.gms.version"
+31-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:22:13-58
+32            android:value="@integer/google_play_services_version" />
+32-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:23:13-66
+33        <meta-data
+33-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:24:9-26:39
+34            android:name="com.google.android.gms.vision.DEPENDENCIES"
+34-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:25:13-70
+35            android:value="barcode" />
+35-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:26:13-36
+36
+37        <activity
+37-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:28:9-36:20
+38            android:name="com.google.android.gms.samples.vision.barcodereader.MainActivity"
+38-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:29:13-41
+39            android:label="@string/title_activity_main" >
+39-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:30:13-56
+40            <intent-filter>
+40-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:31:13-35:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:32:17-69
+41-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:32:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:34:17-77
+43-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:34:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity
+46-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:38:9-39:43
+47            android:name="com.google.android.gms.samples.vision.barcodereader.BarcodeCaptureActivity"
+47-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:38:19-57
+48            android:label="Read Barcode" />
+48-->/home/chirag/Android Projects/BarcodeReader/app/src/main/AndroidManifest.xml:39:13-41
+49        <activity
+49-->[com.google.android.gms:play-services-base:9.4.0] /home/chirag/.gradle/caches/transforms-2/files-2.1/ed8bdf9368d3e10073a02056c7c4ec7a/jetified-play-services-base-9.4.0/AndroidManifest.xml:20:9-22:45
+50            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+50-->[com.google.android.gms:play-services-base:9.4.0] /home/chirag/.gradle/caches/transforms-2/files-2.1/ed8bdf9368d3e10073a02056c7c4ec7a/jetified-play-services-base-9.4.0/AndroidManifest.xml:20:19-85
+51            android:exported="false"
+51-->[com.google.android.gms:play-services-base:9.4.0] /home/chirag/.gradle/caches/transforms-2/files-2.1/ed8bdf9368d3e10073a02056c7c4ec7a/jetified-play-services-base-9.4.0/AndroidManifest.xml:22:19-43
+52            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+52-->[com.google.android.gms:play-services-base:9.4.0] /home/chirag/.gradle/caches/transforms-2/files-2.1/ed8bdf9368d3e10073a02056c7c4ec7a/jetified-play-services-base-9.4.0/AndroidManifest.xml:21:19-78
+53
+54        <service
+54-->[androidx.room:room-runtime:2.2.5] /home/chirag/.gradle/caches/transforms-2/files-2.1/28e9fb3eede996dd8d91f8bfd7ee4a2a/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+55            android:name="androidx.room.MultiInstanceInvalidationService"
+55-->[androidx.room:room-runtime:2.2.5] /home/chirag/.gradle/caches/transforms-2/files-2.1/28e9fb3eede996dd8d91f8bfd7ee4a2a/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+56            android:directBootAware="true"
+56-->[androidx.room:room-runtime:2.2.5] /home/chirag/.gradle/caches/transforms-2/files-2.1/28e9fb3eede996dd8d91f8bfd7ee4a2a/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+57            android:exported="false" />
+57-->[androidx.room:room-runtime:2.2.5] /home/chirag/.gradle/caches/transforms-2/files-2.1/28e9fb3eede996dd8d91f8bfd7ee4a2a/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+58    </application>
+59
+60</manifest>
