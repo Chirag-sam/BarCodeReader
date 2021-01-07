@@ -38,6 +38,13 @@
         android:layout_marginBottom="16dp">
     </ListView>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_all"
+        android:id="@+id/clear_all_barcodes"
+        android:layout_above="@+id/buttons_container"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

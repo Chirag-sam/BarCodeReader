@@ -106,7 +106,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         useFlash = (CompoundButton) findViewById(R.id.use_flash);
 
         findViewById(R.id.read_barcode).setOnClickListener(this);
-
+        findViewById(R.id.clear_all_barcodes).setOnClickListener(this);
         findViewById(R.id.export_to_excel).setOnClickListener(this);
 
         getAllBarCodes();
@@ -129,6 +129,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
             startActivityForResult(intent, RC_BARCODE_CAPTURE);
         } else if(v.getId() == R.id.export_to_excel) {
             exportToExcel();
+        } else if(v.getId() == R.id.clear_all_barcodes) {
+            Log.d(TAG, "onClick: Clear all barckdes");
+            clearAllBarcodes();
         }
 
     }
@@ -181,25 +184,27 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     void insertIntoDatabase(final String barCode) {
-        AppDatabase.databaseWriteExecutor.execute(new Runnable() {
-            @Override
-            public void run() {
-                BarCode barCodeObject = new BarCode(barCode);
-                AppDatabase.getDatabase(getApplicationContext()).barCodeDao().insertBarCode(barCodeObject);
-            }
+        AppDatabase.databaseWriteExecutor.execute(() -> {
+            BarCode barCodeObject = new BarCode(barCode);
+            AppDatabase.getDatabase(getApplicationContext()).barCodeDao().insertBarCode(barCodeObject);
         });
     }
 
+    void clearAllBarcodes() {
+        AppDatabase.getDatabase(getApplicationContext()).barCodeDao().deleteAllBarCodes();
+        getAllBarCodes();
+    }
+
     void getAllBarCodes() {
-        AppDatabase.databaseWriteExecutor.execute(new Runnable() {
-            @Override
-            public void run() {
+        AppDatabase.databaseWriteExecutor.execute(() -> {
+            runOnUiThread(() -> {
                 List<BarCode> barCodeList = AppDatabase.getDatabase(getApplicationContext()).barCodeDao().getAllBarCodes();
                 List<String> barCodes = barCodeList.stream().map(BarCode::getBar_code).collect(Collectors.toList());
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this,android.R.layout.simple_list_item_1,barCodes);
                 ListView lv= findViewById(R.id.barCodeListView);
                 lv.setAdapter(adapter);
-            }
+            });
+
         });
     }
 
