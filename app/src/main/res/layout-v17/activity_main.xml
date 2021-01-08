@@ -41,8 +41,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/clear_all"
-        android:id="@+id/clear_all_barcodes"
+        android:text="@string/read_barcode"
+        android:id="@+id/read_barcode"
         android:layout_above="@+id/buttons_container"/>
 
     <LinearLayout
@@ -56,8 +56,8 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/read_barcode"
-            android:id="@+id/read_barcode"
+            android:text="@string/clear_all"
+            android:id="@+id/clear_all_barcodes"
             android:layout_weight="1"/>
 
         <Button
